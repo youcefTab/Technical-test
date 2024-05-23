@@ -31,3 +31,8 @@ def test_get_sorted_first_n_words_alphabetic_order_respected():
 def test_get_sorted_first_n_words_case_insensitive_lowercase__alphabetic_order_respected():
     expected_output = [("foo", 2), ("aaa", 1), ("bar", 1)]
     assert get_sorted_first_n_words("foo AAA bar baz foo tro", 3) == expected_output
+
+
+def test_get_sorted_first_n_words_one_word_string():
+    expected_output = [("fooAAAbarbazfootro", 1)]
+    assert get_sorted_first_n_words("fooAAAbarbazfootro", 3) == expected_output
