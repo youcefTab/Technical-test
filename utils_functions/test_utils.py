@@ -1,4 +1,4 @@
-from UtilsFunctions.utils import get_sorted_first_n_words
+from utils_functions.utils import get_sorted_first_n_words
 
 
 def test_get_sorted_first_n_words_no_sentence_provided():
